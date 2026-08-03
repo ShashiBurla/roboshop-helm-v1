@@ -1,5 +1,7 @@
 app_name: payment
 app_port: 8005
+job:
+  enabled: false
 
 config_map:
   AMQP_HOST : rabbitmq-dev.shashidevops.online

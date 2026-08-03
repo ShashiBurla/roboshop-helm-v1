@@ -1,5 +1,7 @@
 app_name: orders
 app_port: 8002
+job:
+  enabled: false
 
 config_map:
   MYSQL_HOST : mysql-dev.shashidevops.online
