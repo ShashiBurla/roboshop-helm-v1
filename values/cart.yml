@@ -1,0 +1,7 @@
+app_name: cart
+app_port: 8003
+
+config_map:
+  REDIS_HOST : valkey-dev.shashidevops.online
+  CATALOGUE_URL : http://catalogue:8002
+  PORT : "8003"

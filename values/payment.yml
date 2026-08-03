@@ -1,0 +1,10 @@
+app_name: payment
+app_port: 8005
+
+config_map:
+  AMQP_HOST : rabbitmq-dev.shashidevops.online
+  AMQP_USER : roboshop
+  AMQP_PASS : RoboShop@1
+  CART_URL : http://cart:8003
+  USER_URL : http://user:8001
+  PORT : "8005"

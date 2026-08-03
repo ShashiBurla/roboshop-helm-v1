@@ -1,0 +1,4 @@
+config_map: {}
+service_type: ClusterIP
+job:
+  enabled: false

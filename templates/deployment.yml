@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ .Values.app_name}}
+  labels:
+    app: {{ .Values.app_name}}
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: {{ .Values.app_name}}
+  template:
+    metadata:
+      labels:
+        app: {{ .Values.app_name}}
+    spec:
+      containers:
+        - name: {{ .Values.app_name}}
+          image: burlash.azurecr.io/{{ .Values.app_name}}:latest
+          imagePullPolicy: Always
+          envFrom:
+          - configMapRef:
+              name: {{ .Values.app_name }}

@@ -1,0 +1,10 @@
+app_name: orders
+app_port: 8002
+
+config_map:
+  MYSQL_HOST : mysql-dev.shashidevops.online
+  MYSQL_USER : catalogue
+  MYSQL_PASSWORD : RoboShop@1
+  MYSQL_ROOT_PASSWORD : RoboShop@1
+  MYSQL_DATABASE : catalogue
+  PORT : "8002"

@@ -1,0 +1,9 @@
+app_name: user
+app_port: 8001
+job:
+  enabled: true
+
+config_map:
+  MONGO_URL : mongodb://mongodb-dev.shashidevops.online:27017/users
+  JWT_SECRET : secret-key
+  PORT : "8001"
