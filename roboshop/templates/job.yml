@@ -1,0 +1,15 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: {{ .Values.App_name }}
+spec:
+  template:
+    spec:
+      restartPolicy: Never
+      containers:
+      - name: {{ .Values.App_name }}-db
+        image: burlash.azurecr.io/{{ .Values.App_name }}-db
+        imagePullPolicy: Always
+        envFrom:
+          - configMapRef:
+              name: {{ .Values.App_name }}
